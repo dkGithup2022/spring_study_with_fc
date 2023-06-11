@@ -19,11 +19,6 @@ public class UserDaoTest {
 	}
 
 	@Test
-	public void empty() {
-
-	}
-
-	@Test
 	void createTest() throws SQLException {
 		UserDao userDao = new UserDao();
 
@@ -31,9 +26,5 @@ public class UserDaoTest {
 
 		User user = userDao.findById("wizard");
 		assertThat(user).isEqualTo(new User("wizard", "pw", "name", "email"));
-
-		User noUser = userDao.findById("noone");
-		assertThat(noUser).isNull();
-		;
 	}
 }

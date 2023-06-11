@@ -7,6 +7,5 @@ create table users (
     name        varchar(20)     not null,
     email       varchar(255),
 
-
     primary key (userId)
 );
