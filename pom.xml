@@ -9,5 +9,10 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>jdbc_prac</module>
+      <module>OOP_and_test</module>
   </modules>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 </project>
